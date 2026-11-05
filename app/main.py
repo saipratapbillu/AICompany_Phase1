@@ -174,7 +174,7 @@ def static_asset(
         raise HTTPException(status_code=404, detail="Not found")
 
     return FileResponse(requested)
-=======
+
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy import text
 from sqlalchemy.orm import Session
