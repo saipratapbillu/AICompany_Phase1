@@ -224,4 +224,4 @@ def create_task(t: TaskCreate, db: Session = Depends(get_db)):
 def agents(db: Session = Depends(get_db)):
     rows=db.execute(text("SELECT AgentID,AgentName,AgentType,Grade,AutonomyLevel,RiskLevel,Status,CurrentWorkload FROM Agent ORDER BY AgentName")).mappings().all()
     return [dict(r) for r in rows]
->>>>>>> 3e08d0de30e4b712c5b3c8c50b4f61e4d04df639
+
