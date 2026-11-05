@@ -82,3 +82,5 @@ webencodings==0.6.1
 websockets==17.3
 yarg==0.1.9
 psycopg2-binary==2.9.10
+pipreqs==0.5.0
+psycopg[binary]==3.2.10
