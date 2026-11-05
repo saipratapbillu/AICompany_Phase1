@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import os
 from dotenv import load_dotenv
 from fastapi import Request
@@ -27,7 +27,7 @@ def get_db(request: Request):
             db.rollback()
         finally:
             db.close()
-=======
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from urllib.parse import quote_plus
@@ -47,4 +47,4 @@ def get_db():
         yield db
     finally:
         db.close()
->>>>>>> 3e08d0de30e4b712c5b3c8c50b4f61e4d04df639
+
